@@ -1,5 +1,6 @@
 {
-  "name": "react-redux-starter-kit",
+  "name": "react-starter-kit-example",
+  "originator":"react-redux-starter-kit",
   "version": "3.0.0-alpha.0",
   "description": "Get started with React, Redux, and React-Router!",
   "main": "index.js",
@@ -71,6 +72,10 @@
     }
   },
   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshCoolman/react-starter-kit-example.git"
+  },
+  "originalRepository": {
     "type": "git",
     "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
   },
