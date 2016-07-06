@@ -1,6 +1,7 @@
 import React from 'react'
 import { bindActionCreators } from 'redux'
 import { Counter } from 'components/Counter/Counter'
+import classes from 'components/Counter/Counter.scss'
 import { shallow } from 'enzyme'
 
 describe('(Component) Counter', () => {
@@ -20,6 +21,11 @@ describe('(Component) Counter', () => {
 
   it('Should render as a <div>.', () => {
     expect(_wrapper.is('div')).to.equal(true)
+  })
+
+  it('Should have a <span> with react-css-module generated name', () => {
+    const span = _wrapper.find('span').first()
+    expect(span).to.have.className(classes['counter--green'])
   })
 
   it('Should render with an <h2> that includes Sample Counter text.', () => {
